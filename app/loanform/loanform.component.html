@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>privacy</title>
+</head>
+<body>
+    <marquee width = "100%"> <p style="font-size: xx-large;color: rgb(14, 11, 10);"><strong>APPLY LOAN FORM </strong></p> </marquee>
+  <div class="header" style="background-color:rgb(199, 179, 245)" >
+    <img src="https://png.pngtree.com/png-clipart/20190630/original/pngtree-vector-mortgage-icon-png-image_4174169.jpg" alt="Avatar" class="avatar">
+    <div class="header-right">
+        <a>Contact : 080-123456789</a>
+    </div>
+  </div>
+ 
+
+ 
+  <div class="item active">
+    <img src="https://i0.wp.com/financebuddha.com/blog/wp-content/uploads/2016/11/07124850/personal-loan-application.jpg?fit=676%2C449&ssl=1" alt="SnowSSSS">
+    <div class="centered">
+    </div>
+</div>
+
+<P>&nbsp;</P>
+<form [formGroup]="SubmitForm" (ngSubmit)="submitform()" method="post" >
+<table>
+    <tbody>
+        <div class="mb20 mt30">
+            <h3><strong>APPLY FOR LOAN</strong> </h3>
+        </div>
+        <tr>
+            <td>
+                <label for="name" class="control-label col-sm-3">Name *<span class="pull-right">:</span></label>
+                <div class="col-sm-9"></div>
+            </td>
+            <td>
+                <input formControlName="name" tabindex="1" placeholder="Enter your name"  name="fname" value="" type="text" required>
+            </td>
+        </tr>
+
+        
+        <tr>
+            <td>
+                <label for="phone" class="control-label col-sm-3">Mobile No *<span class="pull-right">:</span></label>
+                <div class="col-sm-9"></div>
+            </td>
+            <td>
+                <input formControlName="mobileno" tabindex="2" placeholder="Enter your mob no." class="form-control" name="phone" value="" type="text" required >
+            </td>
+        </tr>
+
+        
+        <tr>
+            <td>
+                <label for="Email" class="control-label col-sm-3">EMAIL ID *<span class="pull-right">:</span></label>
+                <div class="col-sm-9"></div>
+            </td>
+            <td>
+                <input formControlName="emailid" tabindex="3" placeholder="Enter your Email ID" class="form-control" name="EMAIL" value="" type="text" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+    <label for="age" class="control-label col-sm-3">Age *<span class="pull-right">:</span></label>
+    
+</td>
+<td>
+    <input type="text" value="age" formControlName="age" placeholder="Enter the age">
+    <!-- <select class="form-control" name="age" required>
+        <option value="">Select...</option>
+        <option value="21 years">21 years</option>
+        <option value="22 years">22 years</option>
+        <option value="23 years">23 years</option>
+        <option value="24 years">24 years</option>
+        <option value="25 years">25 years</option>
+        <option value="26 years">26 years</option>
+        <option value="27 years">27 years</option>
+        <option value="28 years">28 years</option>
+        <option value="29 years">29 years</option>
+        <option value="30 years">30 years</option>
+        <option value="31 years">31 years</option>
+        <option value="32 years">32 years</option>
+        <option value="33 years">33 years</option>
+        <option value="34 years">34 years</option>
+        <option value="35 years">35 years</option>
+        <option value="36 years">36 years</option>
+        <option value="37 years">37 years</option>
+        <option value="38 years">38 years</option>
+        <option value="39 years">39 years</option>
+        <option value="40 years">40 years</option>
+        <option value="41 years">41 years</option>
+        <option value="42 years">42 years</option>
+        <option value="43 years">43 years</option>
+        <option value="44 years">44 years</option>
+        <option value="45 years">45 years</option>
+        <option value="46 years">46 years</option>
+        <option value="47 years">47 years</option>
+        <option value="48 years">48 years</option>
+        <option value="49 years">49 years</option>
+        <option value="50 years">50 years</option>
+        <option value="51 years">51 years</option>
+        <option value="52 years">52 years</option>
+        <option value="53 years">53 years</option>
+        <option value="54 years">54 years</option>
+        <option value="55 years">55 years</option>
+        <option value="56 years">56 years</option>
+        <option value="57 years">57 years</option>
+        <option value="58 years">58 years</option>
+        <option value="59 years">59 years</option>
+        <option value="60 years">60 years</option>
+    </select> -->
+</td>
+</tr>
+<tr>
+    <td>
+<label for="city" class="control-label col-sm-3">City *<span class="pull-right">:</span></label>
+
+</td>
+<td>
+
+    <input formControlName="city" tabindex="4" placeholder="Enter City name" class="form-control" name="city" value="" type="text" required>
+</td>
+</tr>
+<P>&nbsp;</P>
+<div class="mb20 mt30">
+    <h3><strong>PERSONAL DETAILS</strong> </h3>
+</div>
+
+<tr>
+    <td>
+<label for="p_card" class="control-label col-sm-3">Pan card *<span class="pull-right">:</span></label>
+
+</td>
+<td>
+<input formControlName="pancard" tabindex="6" type="text" placeholder="Enter PAN card number" class="form-control" name="p_card" value="" required>
+</td>
+</tr>
+<tr>
+    <td>
+<label for="c_score" class="control-label col-sm-3">Cibil score *<span class="pull-right">:</span></label>
+
+</td>
+<td>
+<input formControlName="cibilscore" tabindex="6" type="text" placeholder="Enter your CIBIL score"  type="number" [type]="null" maxlength="3" pattern="[7-9]{1}[0-9]{2}" class="input" name="cibilscore"
+required="cibilscore" class="form-control"   value="" required>
+<span class="text-danger" style="font-size: large;"
+*ngIf="SubmitForm.controls['cibilscore'].dirty && SubmitForm.hasError('required','cibilscore')">*SCORE SHOULD BE =>700</span>
+</td>
+</tr>
+
+
+
+<tr>
+    <td> 
+<label for="l_type" class="control-label col-sm-3">LoanType *<span class="pull-right">:</span></label>
+
+</td>
+<td>
+    <input type="text" value="Loan Type" formControlName="loantype">
+<!-- <select class="form-control" name="l_type" required> -->
+    <!-- <option value="">Select</option> -->
+    <!-- <option value="Home Loan">Home Loan</option>
+    <option value="Home Loan">Site Loan</option>
+    <option value="Home Loan">Flat Loan</option> -->
+    
+<!-- </select> -->
+</td>
+</tr>
+<tr>
+    <td>
+<label for="l_amount" class="control-label col-sm-3">LoanAmount *<span class="pull-right">:</span></label>
+
+</td>
+<td>
+<input formControlName="loanamount" tabindex="5" type="text" placeholder="Enter the required loan amount" class="form-control" name="l_amount" value="" required>
+</td>
+</tr>
+
+<tr>
+    <td>
+<label for="c_name" class="control-label col-sm-3">Company Name *<span class="pull-right">:</span></label>
+
+</td>
+<td>
+<input formControlName="companyname" tabindex="6" type="text" class="form-control" placeholder="Enter company name" name="c_name" value="" required>
+</td>
+</tr>
+
+<tr>
+    <td>
+<label for="occupation" class="control-label col-sm-3">Occupation *<span class="pull-right">:</span></label>
+
+</td>
+<td>
+<input formControlName="occupation" tabindex="7" type="text" placeholder="Enter your occupation" class="form-control" name="occupation" value="" required>
+</td>
+</tr>
+
+<tr>
+    <td>
+<label for="income" class="control-label col-sm-3">Net Monthly Income* <span
+    class="pull-right">:</span></label>
+
+</td>
+<td>
+<input formControlName="netmonthlyincome" tabindex="8" type="text" placeholder="Enter your net salary" class="form-control" name="income" value="">
+</td>
+</tr>
+
+<tr>
+    <td>
+<label for="salary" class="control-label col-sm-3">Current EMI* <span
+    class="pull-right">:</span></label>
+
+</td>
+<td>
+<input formControlName="currentemi" tabindex="9" type="text" placeholder="Specify the current EMI" class="form-control" name="salary" value="">
+</td>
+</tr>
+
+    <div class="button" style="text-align:right;">
+        <button tabindex="12" type="submit"   style="background-color:rgb(14, 240, 33) ;">Submit</button>
+    </div>
+
+    </tbody>
+
+</table>
+</form>
+
+
+   
+
+

@@ -1,0 +1,19 @@
+<div class="register-photo" style="background-image: url(https://s.itl.cat/pngfile/s/12-122540_wallpapers-iphone-5s-hd-iphone-5s-full-hd.jpg); height: 800px;">
+    <div class="form-container" >
+        <div class="image-holder" ></div>
+        <form [formGroup]="loginForm" (ngSubmit)="Register()" method="post" style="background:linear-gradient(90deg,rgb(247, 185, 195),rgb(166, 209, 118),rgb(238, 238, 133)) ;">
+            <h2 class="text-center"><strong>Welcome back!</strong></h2>
+            
+            <div class="form-group"><input formControlName="email" class="form-control" type="text" name="Username" placeholder="Enter email*"></div>
+            <div class="form-group"><input formControlName="password" class="form-control" type="password" name="password" placeholder="Enter Password*"></div>
+            <div class="form-group">
+            </div>
+      <button class="btn btn-success btn-block btn-info" type="submit" [disabled]="!loginForm.valid">Login</button>
+                <button class="btn btn-success btn-block btn-info" type="submit" routerLink="/signup">Signup</button><a class="already" ></a>
+  <br>
+                <p style="text-align: center;">Forgot Password? call: 1800-325498</p>
+        </form>
+    </div>
+  </div>
+
+  

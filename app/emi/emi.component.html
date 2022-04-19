@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>privacy</title>
+</head>
+<body>
+      
+  <div class="header" style="background-color:aquamarine" >
+    <img src="https://cdn-icons-png.flaticon.com/512/45/45180.png" alt="Avatar" class="avatar">
+    <div class="header-right">
+        <a>Contact : 080-123456789</a>
+    </div>
+  </div>
+  
+  
+  <div class="item active">
+    <img src="https://www.bajajfinservmarkets.in/content/dam/bajajfinserv/banner-website/home-loan/Home-Loan-BT-Salaried.png" alt="SnowSSSS" style="width: 100%;">
+    <div class="centered">
+    </div>
+    <h3  style="text-align: center;"><strong>PRIVACY</strong></h3>
+</div>
+
+
+<p>&nbsp;</p>
+<table style="background-color:rgb(250, 250, 250)"> 
+        <tr>
+          <th>Amount</th>
+          <th><input type="number" [(ngModel)]="LoanAmount"/></th>
+        </tr>
+        <tr>
+          <th>Interest Rate</th>
+          <th><input type="number"  [(ngModel)]="InterestPer"/></th>
+        </tr>
+        <tr>
+          <th>Duration In Months </th>
+          <th><input type="number" [(ngModel)]="Duration"></th>
+        </tr>
+        <tr>
+          <th><button (click)="Reset()" style="background-color:rgb(236, 35, 35); width: 20%; height: 30%; color: white;">Reset</button> </th>
+          <th><button (click)="CalculateInterestAmout()" style="background-color: rgb(73, 117, 238); width: 20%; height: 30%; color: white;">Calculate</button></th>
+        </tr>
+        <tr>
+          <th>Simple Interest </th>
+          <th>{{resultCalulation}}</th>
+        </tr>
+        <tr>
+                <th>
+                  Monthly Amount
+                </th>
+                <th>{{monthlyamount}}</th>
+              </tr>
+        <tr>
+                <th>
+                  Total Amount
+                </th>
+                <th>{{totalamount}}</th>
+              </tr>
+      </table>

@@ -1,0 +1,33 @@
+.my-form{
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+  }
+   
+  .full-width {
+    width: 100%;
+  }
+  .my-card{
+    height: 600px;
+    width: 500px;
+    position:absolute;
+   left:45%;
+   text-align: center;
+    top: 30%;
+    transform: translate(-30%,-30%);
+    background-color:white;
+  }
+  .full{
+  background-image: url("https://media.istockphoto.com/photos/person-holds-a-smartphone-with-mobile-banking-icons-projection-picture-id1304484797?b=1&k=20&m=1304484797&s=170667a&w=0&h=Z8RFNCQoyUz1lXq9eZK55DuwA8TPRcPcIAJDR7HDjpk=");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:center;
+  height: 100%;
+  
+  }
+  .bg-img{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBpQdPiIxToQmPC1d2X4xAk8vfq4oynqlZQQCMj5BWABSmji917IrH0MH3Dh6IhEh-u-s&usqp=CAU");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;}
